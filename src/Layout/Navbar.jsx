@@ -18,23 +18,23 @@ const Navbar = () => {
 
   return (
   <div>
-    <nav className='bg-transparent shadow-lg flex items-center justify-around py-3 justify-between pl-10 pr-30 fixed top-0 left-0 w-full'>
+    <nav className='bg-transparent shadow-lg flex items-center justify-around py-6 justify-between pl-10 pr-30 fixed top-0 left-0 w-full'>
       
       {/* LOGO */}
         <Link to  ={'/'}>
-          <span className='font-semibold text-lg flex items-center gap-3 text-blue-400'>
+          <span className='font-semibold text-sm flex items-center gap-3 text-blue-400 hover:text-sky-300 transition duration-200'>
             <House size={22}/>
-            <span className='font-semibold text-2xl'>Home</span>
+            <span className='font-semibold text-xl'>Home</span>
           </span>
         </Link>
 
         {/* Desktop links */}
-      <div className='hidden sm:flex items-center gap-1'>
+      <div className='hidden sm:flex items-center gap-4'>
         {navLinks.map(({to, label})=>(
           <Link
           key={to}
           to={to}
-          className="py-1 px-3 text-lg font-light text-gray-300 hover:text-sky-300 rounded-2xl hover:bg-slate-700 transition duration-200"
+          className="py-1 px-3 text-sm border border-gray-800 hover:border-sky-300 font-medium text-gray-300 hover:text-sky-300 rounded-2xl hover:bg-slate-700 transition duration-200"
           >
           {label}
           </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
     {/* Mobile menu */}
       {isOpen && (
-      <div className="sm:hidden fixed top-[60px] left-0 w-full bg-slate-900/85 backdrop-blur-md flex flex-col z-40">
+      <div className="sm:hidden fixed top-[60px] left-0 w-full bg-slate-900/85 backdrop-blur-md hover:text-slate-700 transition duration-200 flex flex-col z-40">
         {navLinks.map(({to, label})=>(
           <Link
           key={to}
