@@ -17,7 +17,8 @@ const Navbar = () => {
 
 
   return (
-    <nav className='bg-slate-800 shadow-lg flex items-center justify-around py-3 justify-between pl-10 pr-30 fixed top-0 left-0 w-full'>
+  <div>
+    <nav className='bg-transparent shadow-lg flex items-center justify-around py-3 justify-between pl-10 pr-30 fixed top-0 left-0 w-full'>
       
       {/* LOGO */}
         <Link to  ={'/'}>
@@ -42,13 +43,30 @@ const Navbar = () => {
 
       {/* Hamburger button */}
         <button
-        className='sm:hidden'
+        className='sm:hidden p-2 rounded-lg text-gray-300 hover:bg-slate-700 transition duration-200 absolute right-4'
         onClick={() => setIsOpen(!isOpen)}
         aria-label='Toggle menu'
         >
           {isOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
     </nav>
+
+    {/* Mobile menu */}
+      {isOpen && (
+      <div className="sm:hidden fixed top-[60px] left-0 w-full bg-slate-900/85 backdrop-blur-md flex flex-col z-40">
+        {navLinks.map(({to, label})=>(
+          <Link
+          key={to}
+          to={to}
+          onClick={() => setIsOpen(false)}
+          className="py-4 px-8 font-medium text-gray-300 hover:text-sky-300 hover:bg-white/5 transition duration-200"
+          >
+          {label}
+          </Link>
+      ))}
+      </div>
+     )}
+  </div>
   );
 };
 
