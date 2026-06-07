@@ -3,23 +3,43 @@ import Button from '../Components/Button'
 import { ArrowDown, Download } from 'lucide-react'
 import { GitBranch, Link } from 'lucide-react'
 import profile from '../assets/profile.png.png'
+import Greetings from '../Components/Greetings'
+
+
+const skills =[
+  { name: "React", icon: "⚛️" },
+  { name: "Next.js", icon: "▲" },
+  { name: "TypeScript", icon: "𝙏𝙎" },
+  { name: "Node.js", icon: "🟢" },
+  { name: "GraphQL", icon: "◈" },
+  { name: "PostgreSQL", icon: "🐘" },
+  { name: "MongoDB", icon: "🍃" },
+  { name: "Redis", icon: "🔴" },
+  { name: "Docker", icon: "🐳" },
+  { name: "AWS", icon: "☁️" },
+  { name: "Vercel", icon: "▲" },
+  { name: "Tailwind CSS", icon: "🌊" },
+  { name: "Prisma", icon: "◭" },
+  { name: "Jest", icon: "🃏" },
+  { name: "Cypress", icon: "🌲" },
+  { name: "Figma", icon: "🎨" },
+  { name: "Git", icon: "🔀" },
+  { name: "GitHub Actions", icon: "⚙️" },
+];
+
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden ">
-     
+
      {/* content */}
-    <div className='container mx-auto px-6 pt-32 pb-20 relative z-10'>
+    <div className='container mx-auto px-1 pt-1 pb-10 relative z-10'>
       <div className='grid lg:grid-cols-2 gap-12 items-center justify-between'>
        {/* Left column */}
        <div className='space-y-8'>
-         <div className='animate-fade-in'>
-            <span className="inline-flex items-center gap-2 px-3 py-2 border border-gray-600 text-gray-300 rounded-full text-sm font-medium">
-           <span className="w-2 h-2 bg-blue-500 rounded-full rounded-full animate-pulse"/> 
-            Software Developer <span className='w-2 h-2 bg-gray-300 rounded-full'/> React Specialist
-            </span>
-        </div>
-
+       
+        <Greetings/>
+         
         {/* Headline */}
         <div>
           <p className="text-lg text-gray-300 text-justify animate-fade-in animation-delay-200">
@@ -64,7 +84,7 @@ and a commitment to creating reliable, impactful digital products.
        </div>
         {/* Right column */}
       
-      <div className='relative animate-fade-in animation-delay-300'>
+    <div className='relative animate-fade-in animation-delay-300'>
       {/* profile image */}
       <div className='relative max-w-md mx-auto'>
         <div>
@@ -82,13 +102,30 @@ and a commitment to creating reliable, impactful digital products.
           <div className='absolute flex items-center gap-3 -bottom-13 left-20'>
             <div className='text-gray-300 text-2xl font-bold'>1+</div>
             <div className='text-gray-400 text-xs'>Years Exp</div>
-            <div className="w-px h-6 bg-white/60" />
+
           </div>
         </div>
       </div>
     </div>
     </div>
+
+{/* Skills Sections */}
+<div className="mt-20 animate-fade-in animation-delay-600">
+  <p className="text-md font-bold text-sky-300 mb-6 text-center">Technologies I work with</p>
+  <div className="relative overflow-hidden">
+    <div className="flex animate-marquee">
+      {[...skills, ...skills].map((skill, idx) => (
+        <div key={idx} className="flex-shrink-0 px-8 py-4 flex items-center gap-2 text-gray-300">
+          <span className="text-xl">{skill.icon}</span>
+          <span className="text-xl font-semibold text-gray-500 hover:text-gray-300 transition-colors">
+            {skill.name}
+          </span>
+        </div>
+      ))}
+    </div>
   </div>
+</div>
+</div>
     </section>
   )
 }
