@@ -4,28 +4,33 @@ import { ArrowDown, Download } from 'lucide-react'
 import { GitBranch, Link } from 'lucide-react'
 import profile from '../assets/profile.png.png'
 import Greetings from '../Components/Greetings'
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiGraphql, SiPostgresql, SiMongodb, SiRedis, SiDocker,SiVercel, SiTailwindcss, SiPrisma, SiJest, SiCypress, SiFigma, SiGit, SiGithubactions } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 
-const skills =[
-  { name: "React", icon: "⚛️" },
-  { name: "Next.js", icon: "▲" },
-  { name: "TypeScript", icon: "𝙏𝙎" },
-  { name: "Node.js", icon: "🟢" },
-  { name: "GraphQL", icon: "◈" },
-  { name: "PostgreSQL", icon: "🐘" },
-  { name: "MongoDB", icon: "🍃" },
-  { name: "Redis", icon: "🔴" },
-  { name: "Docker", icon: "🐳" },
-  { name: "AWS", icon: "☁️" },
-  { name: "Vercel", icon: "▲" },
-  { name: "Tailwind CSS", icon: "🌊" },
-  { name: "Prisma", icon: "◭" },
-  { name: "Jest", icon: "🃏" },
-  { name: "Cypress", icon: "🌲" },
-  { name: "Figma", icon: "🎨" },
-  { name: "Git", icon: "🔀" },
-  { name: "GitHub Actions", icon: "⚙️" },
+
+const skills = [
+  { name: "React",           icon: <SiReact /> },
+  { name: "Next.js",         icon: <SiNextdotjs /> },
+  { name: "TypeScript",      icon: <SiTypescript /> },
+  { name: "Node.js",         icon: <SiNodedotjs /> },
+  { name: "GraphQL",         icon: <SiGraphql /> },
+  { name: "PostgreSQL",      icon: <SiPostgresql /> },
+  { name: "MongoDB",         icon: <SiMongodb /> },
+  { name: "Redis",           icon: <SiRedis /> },
+  { name: "Docker",          icon: <SiDocker /> },
+  { name: "AWS",             icon: <FaAws /> },
+  { name: "Vercel",          icon: <SiVercel /> },
+  { name: "Tailwind CSS",    icon: <SiTailwindcss /> },
+  { name: "Prisma",          icon: <SiPrisma /> },
+  { name: "Jest",            icon: <SiJest /> },
+  { name: "Cypress",         icon: <SiCypress /> },
+  { name: "Figma",           icon: <SiFigma /> },
+  { name: "Git",             icon: <SiGit /> },
+  { name: "GitHub Actions",  icon: <SiGithubactions /> },
 ];
+
 
 
 const Hero = () => {
@@ -71,8 +76,8 @@ and a commitment to creating reliable, impactful digital products.
         {/* social links */}
         <div className='flex items-center gap-4 text-gray-300 animate-fade-in animation-delay-600'>
           <span className='text-sm text-gray-400'>Follow:</span>
-          {[{ icon: GitBranch, href:"" },
-            { icon: Link, href:"" },
+          {[{ icon: BsGithub, href:"" },
+            { icon: BsLinkedin, href:"" },
             ].map((social, index) => (
               <a key={index} href={social.href}
               className='p-2 hover:bg-sky-700 border border-gray-600 rounded-full hover:border-sky-700 transition duration-200 text-gray-300 hover:text-gray-100'
@@ -91,7 +96,7 @@ and a commitment to creating reliable, impactful digital products.
           <img src={profile} alt="Jayrus Kiprotich" className="w-full aspect-[7/8] object-cover rounded-full" />
 
           {/* Floating badge */}
-          <div className='absolute -bottom-12 -right-4'>
+          <div className='absolute -bottom-12 -right-4 animate-bounce'>
             <div className='flex items-center gap-3'>
               <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse'/>
               <span className='text-gray-300 font-medium text-sm'>Available for Work</span>
@@ -99,7 +104,7 @@ and a commitment to creating reliable, impactful digital products.
           </div>
           
           {/* stats badge */}
-          <div className='absolute flex items-center gap-3 -bottom-13 left-20'>
+          <div className='absolute flex items-center gap-3 -bottom-13 left-20 animate-pulse'>
             <div className='text-gray-300 text-2xl font-bold'>1+</div>
             <div className='text-gray-400 text-xs'>Years Exp</div>
 
@@ -116,7 +121,7 @@ and a commitment to creating reliable, impactful digital products.
     <div className="flex animate-marquee">
       {[...skills, ...skills].map((skill, idx) => (
         <div key={idx} className="flex-shrink-0 px-8 py-4 flex items-center gap-2 text-gray-300">
-          <span className="text-xl">{skill.icon}</span>
+          <span className="text-xl text-gray-200">{skill.icon}</span>
           <span className="text-xl font-semibold text-gray-500 hover:text-gray-300 transition-colors">
             {skill.name}
           </span>
