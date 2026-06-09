@@ -38,7 +38,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden ">
 
      {/* content */}
-    <div className='container mx-auto px-1 pt-1 pb-10 relative z-10'>
+    <div className='container mx-auto px-1 pt-30 pb-10 relative z-10'>
       <div className='grid lg:grid-cols-2 gap-12 items-center justify-between'>
        {/* Left column */}
        <div className='space-y-8'>
@@ -96,7 +96,7 @@ and a commitment to creating reliable, impactful digital products.
           <img src={profile} alt="Jayrus Kiprotich" className="w-full aspect-[7/8] object-cover rounded-full" />
 
           {/* Floating badge */}
-          <div className='absolute -bottom-12 -right-4 animate-bounce'>
+          <div className='absolute -bottom-12 -right-4'>
             <div className='flex items-center gap-3'>
               <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse'/>
               <span className='text-gray-300 font-medium text-sm'>Available for Work</span>
@@ -104,7 +104,7 @@ and a commitment to creating reliable, impactful digital products.
           </div>
           
           {/* stats badge */}
-          <div className='absolute flex items-center gap-3 -bottom-13 left-20 animate-pulse'>
+          <div className='absolute flex items-center gap-3 -bottom-13 left-20'>
             <div className='text-gray-300 text-2xl font-bold'>1+</div>
             <div className='text-gray-400 text-xs'>Years Exp</div>
 

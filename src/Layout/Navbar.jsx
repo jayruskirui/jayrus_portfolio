@@ -17,8 +17,8 @@ const Navbar = () => {
 
 
   return (
-  <div>
-    <nav className='bg-transparent shadow-lg flex items-center justify-around py-6 justify-between pl-12 pr-30 fixed top-0 left-0 w-full relative z-50]'>
+  <div  className="fixed top-0 left-0 bg-slate-900 w-full z-50">
+    <nav className='bg-transparent shadow-lg flex items-center justify-around py-6 justify-between pl-12 pr-30 fixed top-0 left-0 w-full relative'>
       
       {/* LOGO */}
         <Link to  ={'/'}>

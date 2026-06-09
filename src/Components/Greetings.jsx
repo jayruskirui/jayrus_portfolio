@@ -22,7 +22,7 @@ function Greeting() {
         <span className="w-2 h-2 bg-sky-300 rounded-full animate-pulse" />
         <Typewriter
           options={{
-            strings: ["Software Developer", "React Specialist"],
+            strings: ["Software Developer", "Front-end", "Back-end"],
             autoStart: true,
             loop: true,
           }}
