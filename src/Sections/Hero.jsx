@@ -51,10 +51,10 @@ const Hero = () => {
         <div>
           <p className="text-lg text-gray-300 text-justify animate-fade-in animation-delay-200">
             Software developer focused on building scalable,
-high-performance web applications that deliver seamless user experiences.
-I enjoy writing clean, maintainable code and turning complex ideas into simple,
-intuitive solutions. I am driven by curiosity, continuous learning, 
-and a commitment to creating reliable, impactful digital products.
+            high-performance web applications that deliver seamless user experiences.
+            I enjoy writing clean, maintainable code and turning complex ideas into simple,
+            intuitive solutions. I am driven by curiosity, continuous learning, 
+            and a commitment to creating reliable, impactful digital products.
           </p>
         </div>
 
@@ -68,11 +68,13 @@ and a commitment to creating reliable, impactful digital products.
          />
         </button></Link>
 
+        <a href='https://drive.google.com/file/d/1G7SrteNyQ78RT5RvlgQ5RVhtZ4qmsmSd/view?usp=drive_link'>
         <button className="group flex items-center gap-2 px-5 py-2 text-gray-400 hover:text-gray-200 border border-gray-400 hover:border-gray-600 rounded-lg font-medium transition-opacity hover:opacity-85">
          Download CV
         <Download
         size={16}/>
         </button>
+        </a>
         </div>
 
         {/* social links */}
@@ -106,11 +108,11 @@ and a commitment to creating reliable, impactful digital products.
           </div>
           
           {/* stats badge */}
-          <div className='absolute flex items-center gap-3 -bottom-13 left-20'>
+          {/* <div className='absolute flex items-center gap-3 -bottom-13 left-20'>
             <div className='text-gray-300 text-2xl font-bold'>1+</div>
             <div className='text-gray-400 text-xs'>Years Exp</div>
 
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
