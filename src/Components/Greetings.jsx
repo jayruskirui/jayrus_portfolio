@@ -10,7 +10,7 @@ function Greeting() {
   }
 
   return (
-    <div className="space-y-3 animate-fade-in">
+    <div className="space-y-8 animate-fade-in">
       <p className="text-sky-300 text-3xl font-medium">
         {greetByTime()} Welcome to my portfolio
       </p>

@@ -1,12 +1,14 @@
 import React from 'react'
 import Button from '../Components/Button'
 import { ArrowDown, Download } from 'lucide-react'
-import { GitBranch, Link } from 'lucide-react'
 import profile from '../assets/profile.png.png'
 import Greetings from '../Components/Greetings'
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiGraphql, SiPostgresql, SiMongodb, SiRedis, SiDocker,SiVercel, SiTailwindcss, SiPrisma, SiJest, SiCypress, SiFigma, SiGit, SiGithubactions } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
+import Projects from './Projects'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -41,7 +43,7 @@ const Hero = () => {
     <div className='container mx-auto px-1 pt-30 pb-10 relative z-10'>
       <div className='grid lg:grid-cols-2 gap-12 items-center justify-between'>
        {/* Left column */}
-       <div className='space-y-8'>
+       <div className='space-y-10'>
        
         <Greetings/>
          
@@ -58,13 +60,13 @@ and a commitment to creating reliable, impactful digital products.
 
         {/* CTAs */}
         <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-400'>
-         <button className="group flex items-center gap-2 rounded-lg px-4 py-2 font-medium ... bg-gradient-to-r from-sky-600 to-indigo-500 hover:from-sky-500 hover:to-indigo-400">
+       <Link to = "./Projects"> <button className="group flex items-center gap-2 rounded-lg px-4 py-2 font-medium ... bg-gradient-to-r from-sky-600 to-indigo-500 hover:from-sky-500 hover:to-indigo-400">
          View my work
         <ArrowDown
         size={16}
         className="group-hover:animate-bounce"
          />
-        </button>
+        </button></Link>
 
         <button className="group flex items-center gap-2 px-5 py-2 text-gray-400 hover:text-gray-200 border border-gray-400 hover:border-gray-600 rounded-lg font-medium transition-opacity hover:opacity-85">
          Download CV
@@ -76,8 +78,8 @@ and a commitment to creating reliable, impactful digital products.
         {/* social links */}
         <div className='flex items-center gap-4 text-gray-300 animate-fade-in animation-delay-600'>
           <span className='text-sm text-gray-400'>Follow:</span>
-          {[{ icon: BsGithub, href:"" },
-            { icon: BsLinkedin, href:"" },
+          {[{ icon: BsGithub, href:"https://github.com/jayruskirui" },
+            { icon: BsLinkedin, href:"https://www.linkedin.com/in/jayrus-kiprotich-8344513b6/" },
             ].map((social, index) => (
               <a key={index} href={social.href}
               className='p-2 hover:bg-sky-700 border border-gray-600 rounded-full hover:border-sky-700 transition duration-200 text-gray-300 hover:text-gray-100'
@@ -115,7 +117,7 @@ and a commitment to creating reliable, impactful digital products.
     </div>
 
 {/* Skills Sections */}
-<div className="mt-20 animate-fade-in animation-delay-600">
+{/* <div className="mt-20 animate-fade-in animation-delay-600">
   <p className="text-md font-bold text-sky-300 mb-6 text-center">Technologies I work with</p>
   <div className="relative overflow-hidden">
     <div className="flex animate-marquee">
@@ -129,7 +131,7 @@ and a commitment to creating reliable, impactful digital products.
       ))}
     </div>
   </div>
-</div>
+</div> */}
 </div>
     </section>
   )
