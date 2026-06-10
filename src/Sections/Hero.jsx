@@ -40,7 +40,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden ">
 
      {/* content */}
-    <div className='container mx-auto px-1 pt-30 pb-10 relative z-10'>
+    <div className='container mx-auto px-10 pt-30 pb-20 relative z-10'>
       <div className='grid lg:grid-cols-2 gap-12 items-center justify-between'>
        {/* Left column */}
        <div className='space-y-10'>
