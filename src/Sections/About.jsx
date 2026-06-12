@@ -7,7 +7,7 @@ import profile from "../assets/profile.png.png";
 
 const About = () => {
   return (
-    <section className="relative min-h-screen items-center overflow-hidden pr-7">
+    <section id="about" className="relative min-h-screen items-center overflow-hidden pr-7">
     <div className='container mx-auto px-10 pt-20 pb-20 relative z-10'>
      <div className='flex grid justify-center text-gray-300 pt-10 font-medium place-items-center'>
       <h5 className='text-sm text-gray-400'>Get To Know</h5>
