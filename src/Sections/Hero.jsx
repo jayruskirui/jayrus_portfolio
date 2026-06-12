@@ -8,6 +8,7 @@ import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiGraphql, SiPostgresq
 import { FaAws } from "react-icons/fa";
 import Projects from './Projects'
 import { Link } from 'react-router-dom'
+import ScrollButton from '../Components/ScrollButton'
 
 
 
@@ -117,6 +118,10 @@ const Hero = () => {
       </div>
     </div>
     </div>
+
+  
+     <ScrollButton onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })} />
+  
 
 {/* Skills Sections */}
 {/* <div className="mt-20 animate-fade-in animation-delay-600">
