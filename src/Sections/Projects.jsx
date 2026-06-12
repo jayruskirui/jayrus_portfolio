@@ -2,6 +2,8 @@ import React from 'react'
 import salesImg from "../assets/projects/sales.png.png"
 import ecommerceImg from "../assets/projects/ecommerce.png.png"
 import universityImg from "../assets/projects/university.png.png"
+import { FaGithubSquare }from 'react-icons/fa';
+import { PiArrowSquareOutBold } from "react-icons/pi";
 
 
 const projects = [
@@ -44,8 +46,6 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className='py-32 relative overflow-hidden'>
-     <div className='absolute top-1/4 right-0 w-96 h-96 bg-blue-900 rounded-full blur-3xl'/>
-      <div className='absolute top-1/4 left-0 w-96 h-96 bg-blue-900 rounded-full blur-3xl'/>
       <div className='container mx-auto px-6 relative z-10'>
 
         {/* Section header */}
@@ -60,7 +60,7 @@ const Projects = () => {
           {projects.map((project, index)=>(
             <div
             key={index}
-            className='group rounded-2xl overflow-hidden animate-fade-in md:row-span-1'
+            className='group rounded-2xl overflow-hidden animate-fade-in md:row-span-1 text-gray-300'
             style={{animationDelay: `${(index+1)*100}ms`}}>
               
               {/* image */}
@@ -69,6 +69,56 @@ const Projects = () => {
                 src={project.image}
                 alt={project.title}
                 className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'/>
+                {/* <div className='absolute insert-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60'/> */}
+
+                {/* overlay links */}
+                <div className='absolute insert-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                </div>
+              </div>
+
+              {/* content */}
+              <div className='p-6 space-y-4'>
+                <div className='flex items-start justify-between'>
+                  <h3 className='text-xl font-semibold group-hover:text-sky-300 transition-colors'>
+                    {project.title}
+                  </h3>
+                </div>
+                <p className='text-gray-400 text-sm text-justify'>
+                  {project.description}
+                </p>
+                <div className='flex flex-wrap gap-2'>
+                  {project.tags.map((tag, tagIdx)=>(
+                    <span
+                    key={tagIdx}
+                    className='px-4 py-1.5 rounded-full bg-blue-900 text-xs font-medium border border-gray-600 text-gray-400 hover:border-gray-400 hover:text-gray-300 transition-all duration-300'>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Actions buttons */}
+                <div className='flex gap-3 pt-2'>
+                  <a
+                  href={project.github}
+                  target='_blank'
+                  rel="noopener noreferrer"
+                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-blue-900 hover:border-gray-400 transition-all duration-300'
+                  >
+                    <FaGithubSquare className='w-4 h-4'/>
+                    Github
+                  </a>
+
+                  <a
+                  href={project.demo}
+                  target='_blank'
+                  rel="noopener noreferrer"
+                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-blue-900 hover:border-gray-400 transition-all duration-300'
+                  >
+                    <PiArrowSquareOutBold  className='w-4 h-4'/>
+                    Live Demo
+                  </a>
+
+                </div>
               </div>
             </div>
           ))}
