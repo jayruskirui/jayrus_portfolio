@@ -4,8 +4,8 @@ const ShieldCheck = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    // fill="currentColor"
-    className="w-5 h-5 text-white flex-shrink-0"
+    fill="currentColor"
+    className="w-5 h-5 text-sky-300 flex-shrink-0"
   >
     <path
       fillRule="evenodd"
@@ -20,7 +20,7 @@ const ShieldIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    // fill="currentColor"
+    fill="currentColor"
     className="w-5 h-5 text-white flex-shrink-0 mt-0.5"
   >
     <path
@@ -48,6 +48,7 @@ const backendSkills = [
   { name: "Database Design", level: "Experienced" },
   { name: "Authentication & Security", level: "Experienced" },
   { name: "Express js", level: "Intermediate" },
+  { name: "Next js", level: "Intermediate" },
 ];
 
 const databaseSkills = [
@@ -81,7 +82,7 @@ const SkillItem = ({ name, level }) => (
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="w-5 h-5 text-white flex-shrink-0 mt-3"
+      className="w-5 h-5 text-sky-300 flex-shrink-0 mt-3"
     >
       <path
         fillRule="evenodd"
@@ -109,19 +110,19 @@ const Competencies = () => {
           <span className='text-gray-400 text-sm font-medium tracking-wider uppercase'>
             My Core Competencies
           </span>
-          <h2 className='text-gray-300 text-4xl md:text-5xl font-bold mt-4'>
+          <h2 className='text-sky-500 text-4xl md:text-5xl font-bold mt-4'>
             Web Developement
           </h2>
         </div>
 
         {/* Cards */}
-        <div className='grid md:grid-cols-3 gap-8'>
+        <div className='grid md:grid-cols-3 gap-8 font-medium'>
           {/* Frontend card */}
           <div className='border border-transparent rounded-3xl bg-slate-800 p-7'>
-            <h3 className='text-gray-300 text-xl font-bold mb-8'>
+            <h3 className='text-sky-300 text-xl font-bold text-center mb-8'>
               Frontend
             </h3>
-            <div >
+            <div className='grid grid-cols-2 gap-8 font-medium'>
               {frontendSkills.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
@@ -130,10 +131,10 @@ const Competencies = () => {
               
           {/* Backend Card */}
           <div className='border border-transparent rounded-3xl bg-slate-800 p-5'>
-            <h3 className='text-gray-300 text-xl font-bold text-center mb-8'>
+            <h3 className='text-sky-300 text-xl font-bold text-center mb-8'>
               Backend
             </h3>
-            <div>
+            <div className='grid grid-cols-2 gap-8 font-medium'>
               {backendSkills.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
@@ -142,10 +143,10 @@ const Competencies = () => {
 
               {/* Database */}
           <div className='border border-transparent rounded-3xl bg-slate-800 p-5'>
-            <h3 className='text-gray-300 text-xl font-bold text-center mb-8'>
+            <h3 className='text-sky-300 text-xl font-bold text-center mb-8'>
               Database
             </h3>
-            <div>
+            <div className='grid grid-cols-2 gap-8 font-medium'>
               {databaseSkills.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
@@ -154,10 +155,10 @@ const Competencies = () => {
 
             {/* DevOps */}
           <div className='border border-transparent rounded-3xl bg-slate-800 p-5'>
-            <h3 className='text-gray-300 text-xl font-bold text-center mb-8'>
+            <h3 className='text-sky-300 text-xl font-bold text-center mb-8'>
               DevOps Tools
             </h3>
-            <div>
+            <div className='grid grid-cols-2 gap-8 font-medium'>
               {DevOpstools.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
@@ -166,10 +167,10 @@ const Competencies = () => {
           
           {/* Soft Skills */}
           <div className='border border-transparent rounded-3xl bg-slate-800 p-5'>
-            <h3 className='text-gray-300 text-xl font-bold text-center mb-8'>
+            <h3 className='text-sky-300 text-xl font-bold text-center mb-8'>
               Soft Skills
             </h3>
-            <div>
+            <div className='grid grid-cols-2 gap-8 font-medium'>
               {softSkills.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
