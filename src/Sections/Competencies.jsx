@@ -4,8 +4,8 @@ const ShieldCheck = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    fill="currentColor"
-    className="w-5 h-5 text-primary flex-shrink-0"
+    // fill="currentColor"
+    className="w-5 h-5 text-white flex-shrink-0"
   >
     <path
       fillRule="evenodd"
@@ -20,8 +20,8 @@ const ShieldIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    fill="currentColor"
-    className="w-5 h-5 text-primary flex-shrink-0 mt-0.5"
+    // fill="currentColor"
+    className="w-5 h-5 text-white flex-shrink-0 mt-0.5"
   >
     <path
       fillRule="evenodd"
@@ -35,38 +35,34 @@ const ShieldIcon = () => (
 
 const frontendSkills = [
   { name: "HTML & CSS", level: "Experienced" },
-  { name: "React & Next.js", level: "Experienced" },
-  { name: "JavaScript & TypeScript", level: "Experienced" },
+  { name: "React", level: "Experienced" },
+   { name: "Next.js", level: "Experienced" },
+  { name: "JavaScript", level: "Experienced" },
   { name: "Tailwind CSS", level: "Experienced" },
-  { name: "Responsive Design", level: "Experienced" },
-  { name: "State Management", level: "Experienced" },
+  { name: "TypeScript", level: "Experienced" },
 ];
 
 const backendSkills = [
-  { name: "Node.js & Express", level: "Experienced" },
+  { name: "Node.js", level: "Experienced" },
   { name: "REST API Design", level: "Experienced" },
   { name: "Database Design", level: "Experienced" },
   { name: "Authentication & Security", level: "Experienced" },
-  { name: "Deployment & DevOps", level: "Intermediate" },
-  { name: "Server-Side Rendering", level: "Experienced" },
+  { name: "Express js", level: "Intermediate" },
 ];
 
 const databaseSkills = [
-  { name: "SQL & NoSQL", level: "Experienced" },
-  { name: "Database Design", level: "Experienced" },
-  { name: "Data Modeling", level: "Experienced" },
-  { name: "Query Optimization", level: "Intermediate" },
-  { name: "Backup & Recovery", level: "Intermediate" },
-  { name: "Scaling & Sharding", level: "Intermediate" },
+  { name: "PostgreSQL", level: "Experienced" },
+  { name: "MongoDB", level: "Experienced" },
+  { name: "MySQL", level: "Experienced" },
+  { name: "GraphQL", level: "Intermediate" },
 ];
 
 const DevOpstools = [
   { name: "Git & GitHub", level: "Experienced" },
-  { name: "Agile / Scrum", level: "Experienced" },
-  { name: "Code Reviews", level: "Experienced" },
-  { name: "Team Communication", level: "Experienced" },
-  { name: "Project Planning", level: "Intermediate" },
-  { name: "Documentation", level: "Experienced" },
+  { name: "GitLab", level: "Experienced" },
+  { name: "Docker", level: "Experienced" },
+  { name: "Kubernetes", level: "Experienced" },
+  { name: "Vercel & Render", level: "Intermediate" },
 ];
 
 const softSkills = [
@@ -85,7 +81,7 @@ const SkillItem = ({ name, level }) => (
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="w-5 h-5 text-primary flex-shrink-0 mt-0.5"
+      className="w-5 h-5 text-white flex-shrink-0 mt-3"
     >
       <path
         fillRule="evenodd"
@@ -94,8 +90,8 @@ const SkillItem = ({ name, level }) => (
       />
     </svg>
     <div>
-      <p className="font-semibold text-white text-sm">{name}</p>
-      <p className="text-muted-foreground text-xs mt-0.5">{level}</p>
+      <p className="text-gray-300 text-1xl mt-3 mb-2">{name}</p>
+      {/* <p className="text-gray-500 text-xs mt-0.5">{level}</p> */}
     </div>
   </div>
 );
@@ -106,7 +102,7 @@ const Competencies = () => {
     <section id='competencies' className='py-10 relative overflow-hidden'>
       {/* <div className='absolute top-1/2 left-1/4 w-96 h-96 bg-blue-900 rounded-full blur-3xl'/> */}
 
-      <div className='container mx-auto px-6 relative z-10'>
+      <div className='container mx-auto px-8 relative z-10'>
 
         {/* Section Header */}
         <div className='text-center mb-16'>
@@ -121,11 +117,11 @@ const Competencies = () => {
         {/* Cards */}
         <div className='grid md:grid-cols-3 gap-8'>
           {/* Frontend card */}
-          <div className='border border-transparent rounded-3xl bg-slate-800 p-5'>
-            <h3 className='text-gray-300 text-xl font-bold text-center mb-8'>
+          <div className='border border-transparent rounded-3xl bg-slate-800 p-7'>
+            <h3 className='text-gray-300 text-xl font-bold mb-8'>
               Frontend
             </h3>
-            <div>
+            <div >
               {frontendSkills.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
@@ -150,7 +146,7 @@ const Competencies = () => {
               Database
             </h3>
             <div>
-              {frontendSkills.map((item,i)=>(
+              {databaseSkills.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
             </div>
@@ -162,7 +158,7 @@ const Competencies = () => {
               DevOps Tools
             </h3>
             <div>
-              {frontendSkills.map((item,i)=>(
+              {DevOpstools.map((item,i)=>(
                 <SkillItem key={i} name={item.name} level={item.level}/>
               ))}
             </div>

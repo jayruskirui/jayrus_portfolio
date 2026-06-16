@@ -32,21 +32,21 @@ const About = () => {
           {/* Stat cards */}
           <div className="grid grid-cols-3 gap-3 sm:gap-4">
             <a href="#projects">
-              <article className="bg-blue-900 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
+              <article className="bg-slate-800 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
                 <GiAchievement color="#ff3300" size={50} className="shrink-0 sm:w-12 sm:h-12" />
                 <h3 className="text-xs sm:text-sm leading-snug">1+ Year<br />Experience</h3>
               </article>
             </a>
 
             <a href="#reviews">
-              <article className="bg-blue-900 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
+              <article className="bg-slate-800 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
                 <MdReviews color="#FF6F00" size={50} className="shrink-0 sm:w-12 sm:h-12" />
                 <h3 className="text-xs sm:text-sm leading-snug">Client Reviews<br />12+</h3>
               </article>
             </a>
 
             <a href="#projects">
-              <article className="bg-blue-900 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
+              <article className="bg-slate-800 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
                 <FcBriefcase size={50} className="shrink-0 sm:w-12 sm:h-12" />
                 <h3 className="text-xs sm:text-sm leading-snug">Completed<br />Projects<br />10+</h3>
               </article>
