@@ -9,12 +9,12 @@ import 'swiper/css/pagination';
 
 const data = [
   {
-    name: 'Asha Ali',
-    review: 'Good morning Ben the classes and the assignment was 👌🏾 plus the pdf on factors affecting systolic blood pressure was eye opening. I feel like my STATA skills are well polished. Thank you!'
+    name: 'Brian Mwangi',
+    review: 'Excellent developer with strong attention to detail and a commitment to delivering high-quality solutions.'
   },
   {
-    name: 'Austine Tanyases',
-    review: 'OK I have seen it. Thanks for assisting me in the STATA Program where I faced challenges. Your classes were good. Be blessed. 💯💯'
+    name: 'Grace Chebet',
+    review: 'A dependable software developer who consistently produces quality work and meets deadlines.'
   }
 ]
 
