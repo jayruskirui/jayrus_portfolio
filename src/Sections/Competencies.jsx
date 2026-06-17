@@ -63,7 +63,8 @@ const DevOpstools = [
   { name: "GitLab", level: "Experienced" },
   { name: "Docker", level: "Experienced" },
   { name: "Kubernetes", level: "Experienced" },
-  { name: "Vercel & Render", level: "Intermediate" },
+  { name: "Helm", level: "Intermediate" },
+  { name: "Terraform", level: "Intermediate" },
 ];
 
 const softSkills = [
