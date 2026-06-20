@@ -24,7 +24,7 @@ const Reviews = () => {
       <h5 className="text-center text-sm font-medium text-gray-400 mb-1 tracking-widest uppercase">
         Client Reviews
       </h5>
-      <h2 className="text-center text-sky-400 text-3xl font-bold mb-10">Reviews</h2>
+      <h2 className="text-center text-sky-500 text-3xl font-bold mb-10">Reviews</h2>
 
       <Zoom duration={900} delay={100}>
         <div className="w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 mx-auto pb-7">
