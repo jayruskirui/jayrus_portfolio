@@ -50,9 +50,9 @@ const Projects = () => {
 
         {/* Section header */}
         <div className='text-center mx-auto max-w-2xl mb-16'>
-          <span className='text-sm text-gray-400 mb-6'>
+          <span className='text-gray-400 text-sm font-medium tracking-wider uppercase'>
             Project Universe</span>
-          <h2 className='text-2xl text-sky-500 font-medium'>Web Developement Projects</h2>
+          <h2 className="text-sky-500 text-4xl md:text-5xl font-bold mt-4">Web Developement Projects</h2>
         </div>
 
         {/* project grid */}
