@@ -90,7 +90,7 @@ const Projects = () => {
                   {project.tags.map((tag, tagIdx)=>(
                     <span
                     key={tagIdx}
-                    className='px-4 py-1.5 rounded-full bg-blue-900 text-xs font-medium border border-gray-600 text-gray-400 hover:border-gray-400 hover:text-gray-300 transition-all duration-300'>
+                    className='px-4 py-1.5 rounded-full bg-slate-800 text-xs font-medium border border-gray-600 text-gray-400 hover:border-gray-400 hover:text-gray-300 transition-all duration-300'>
                       {tag}
                     </span>
                   ))}
@@ -102,7 +102,7 @@ const Projects = () => {
                   href={project.github}
                   target='_blank'
                   rel="noopener noreferrer"
-                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-blue-900 hover:border-gray-400 transition-all duration-300'
+                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
                   >
                     <FaGithubSquare className='w-4 h-4'/>
                     Github
@@ -112,7 +112,7 @@ const Projects = () => {
                   href={project.demo}
                   target='_blank'
                   rel="noopener noreferrer"
-                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-blue-900 hover:border-gray-400 transition-all duration-300'
+                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
                   >
                     <PiArrowSquareOutBold  className='w-4 h-4'/>
                     Live Demo

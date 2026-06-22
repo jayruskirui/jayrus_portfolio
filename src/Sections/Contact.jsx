@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdPhoneInTalk } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
-import Emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { IoAlertCircleOutline } from "react-icons/io5";
 import { GoCheckCircle } from "react-icons/go";
 
@@ -92,6 +92,16 @@ const handleSubmit = async (e) => {
   }
 };
 
+useEffect(() => {
+  if (submitStatus.type) {
+    const timer = setTimeout(() => {
+      setSubmitStatus({ type: null, message: "" });
+    }, 5000);
+
+    return () => clearTimeout(timer); // cleanup if component unmounts
+  }
+}, [submitStatus.type]);
+
 
   return (
   <section id="contact" className="py-32 relative overflow-hidden">
@@ -106,7 +116,36 @@ const handleSubmit = async (e) => {
 
 
        <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
+
         {/* Contact Info */}
+          <div className="space-y-6">
+            <div className="bg-slate-800 rounded-3xl p-8">
+              <h3 className="text-xl font-semibold mb-6 text-gray-400">
+                Contact Information
+              </h3>
+              <div className="space-y-4 text-gray-300">
+                {contactInfo.map((item, i) => (
+                  <a
+                    key={i}
+                    href={item.href}
+                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-slate-700 transition-colors group"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-slate-700 flex items-center justify-center group-hover:bg-slate-600 transition-colors">
+                      <item.icon className="w-7 h-7 text-gray-300" />
+                    </div>
+                    <div>
+                      <div className="text-sm text-gray-300">
+                        {item.label}
+                      </div>
+                      <div className="font-medium text-gray-400">{item.value}</div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+        {/* Form Info */}
         <div className='bg-slate-800 p-8 rounded-3xl text-gray-300'>
           <form className='space-y-6' onSubmit={handleSubmit}>
 
