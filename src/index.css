@@ -4,6 +4,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes marquee {
     0% {
       transform: translateX(0);
@@ -77,3 +81,13 @@ body {
   .animate-bounce {
    animation: bounce 2s infinite;
   }
+
+
+  @keyframes swing {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+.animate-swing {
+  animation: swing 2s ease-in-out infinite;
+}

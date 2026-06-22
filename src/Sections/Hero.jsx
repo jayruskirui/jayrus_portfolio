@@ -120,7 +120,7 @@ const Hero = () => {
     </div>
 
   
-     <ScrollButton onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })} />
+     
   
 
 {/* Skills Sections */}
@@ -139,8 +139,13 @@ const Hero = () => {
     </div>
   </div>
 </div> */}
+
+     {/* Scroll Button - centered at bottom of hero */}
+ <div className="absolute mt-13 left-1/2 -translate-x-1/2 animate-swing">
+    <ScrollButton onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })} />
+  </div>
 </div>
-    </section>
+</section>
   )
 }
 
