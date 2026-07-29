@@ -34,7 +34,7 @@ const projects = [
     image: carRentalImg,
     tags: ["HTML", "Tailwind-css", "Javascript", "React"],
     github: "https://github.com/jayruskirui/CarRental",
-    demo: "car-rental-seven-green.vercel.app",
+    demo: "https://car-rental-seven-green.vercel.app/",
 
   },
 ];
@@ -102,7 +102,7 @@ const Projects = () => {
                   href={project.github}
                   target='_blank'
                   rel="noopener noreferrer"
-                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
+                  className='flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-full border border-gray-600 text-gray-300 text-medium font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
                   >
                     <FaGithubSquare className='w-4 h-4'/>
                     Github
@@ -112,7 +112,7 @@ const Projects = () => {
                   href={project.demo}
                   target='_blank'
                   rel="noopener noreferrer"
-                  className='flex-1 flex items-center justify-center gap-2 px-4 py-2.4 rounded-full border border-gray-600 text-gray-300 text-sm font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
+                  className='flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-full border border-gray-600 text-gray-300 text-medium font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
                   >
                     <PiArrowSquareOutBold  className='w-4 h-4'/>
                     Live Demo

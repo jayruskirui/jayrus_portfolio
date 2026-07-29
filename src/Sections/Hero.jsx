@@ -85,7 +85,7 @@ const Hero = () => {
             { icon: BsLinkedin, href:"https://www.linkedin.com/in/jayrus-kiprotich-8344513b6/" },
             ].map((social, index) => (
               <a key={index} href={social.href}
-              className='p-2 hover:bg-sky-700 border border-gray-600 rounded-full hover:border-sky-700 transition duration-200 text-gray-300 hover:text-gray-100'
+              className='p-2 border border-gray-600 rounded-md hover:bg-slate-700 hover:border-gray-400 transition duration-200 text-gray-300 hover:text-gray-100'
               >
                 {<social.icon className="w-4 h-4"/>}
               </a>

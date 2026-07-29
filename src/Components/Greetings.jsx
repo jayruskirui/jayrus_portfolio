@@ -14,8 +14,8 @@ function Greeting() {
       <p className="text-sky-300 text-3xl font-medium">
         {greetByTime()} Welcome to my portfolio
       </p>
-      <h2 className="text-5xl md:text-6xl lg:text-5xl font-bold text-white">
-        I'm Jayrus Kiprotich
+      <h2 className="text-3xl md:text-5xl lg:text-4xl font-bold text-white">
+        I'm  Jayrus Kiprotich
       </h2>
 
       <span className="inline-flex items-center gap-2 px-4 py-1 rounded-full glass text-2xl text-sky-300 mt-4">
