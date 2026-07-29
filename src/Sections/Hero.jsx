@@ -101,7 +101,7 @@ const Hero = () => {
           <img src={profile} alt="Jayrus Kiprotich" className="w-full aspect-[7/8] object-cover rounded-full" />
 
           {/* Floating badge */}
-          <div className='absolute -bottom-12 -right-4'>
+          <div className='absolute -bottom-5 -right-3'>
             <div className='flex items-center gap-3'>
               <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse'/>
               <span className='text-gray-300 font-medium text-sm'>Available for Work</span>
