@@ -1,0 +1,73 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Professional man avatar</title>
+  <desc>A flat-style professional avatar icon of a man wearing a navy suit and tie, with short dark hair, on a light gray circular background.</desc>
+
+  <!-- Background -->
+  <circle cx="200" cy="200" r="198" fill="#eef1f4"/>
+  <circle cx="200" cy="200" r="198" fill="none" stroke="#d5dbe1" stroke-width="2"/>
+
+  <!-- Shoulders / suit jacket -->
+  <path d="M40 400
+           Q40 300 130 272
+           L160 260
+           Q200 275 240 260
+           L270 272
+           Q360 300 360 400
+           Z" fill="#2b3a55"/>
+
+  <!-- Shirt collar -->
+  <path d="M160 260 L200 300 L182 265 Z" fill="#ffffff"/>
+  <path d="M240 260 L200 300 L218 265 Z" fill="#ffffff"/>
+
+  <!-- Tie -->
+  <path d="M192 268 L200 300 L208 268 L200 258 Z" fill="#8a2c2c"/>
+  <path d="M195 300 L200 340 L205 300 Z" fill="#8a2c2c"/>
+
+  <!-- Neck -->
+  <rect x="178" y="220" width="44" height="55" rx="10" fill="#e0a978"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="168" rx="62" ry="70" fill="#eebd93"/>
+
+  <!-- Ears -->
+  <ellipse cx="140" cy="172" rx="10" ry="14" fill="#eebd93"/>
+  <ellipse cx="260" cy="172" rx="10" ry="14" fill="#eebd93"/>
+
+  <!-- Hair -->
+  <path d="M138 158
+           Q132 96 176 82
+           Q192 76 200 78
+           Q212 76 226 82
+           Q270 96 262 158
+           Q259 132 250 122
+           Q246 138 236 128
+           Q230 140 218 118
+           Q206 132 196 112
+           Q188 130 178 116
+           Q170 136 162 124
+           Q152 136 148 122
+           Q140 132 138 158 Z" fill="#3b2a20"/>
+  <!-- Side part highlight -->
+  <path d="M196 112 Q200 96 210 90 Q202 100 200 114 Z" fill="#2c2018"/>
+  <!-- Sideburns -->
+  <path d="M138 150 Q136 132 146 122 Q142 138 144 156 Z" fill="#3b2a20"/>
+  <path d="M262 150 Q264 132 254 122 Q258 138 256 156 Z" fill="#3b2a20"/>
+
+  <!-- Eyebrows -->
+  <rect x="168" y="160" width="20" height="4" rx="2" fill="#3b2a20"/>
+  <rect x="212" y="160" width="20" height="4" rx="2" fill="#3b2a20"/>
+
+  <!-- Eyes -->
+  <circle cx="178" cy="172" r="4" fill="#2b2b2b"/>
+  <circle cx="222" cy="172" r="4" fill="#2b2b2b"/>
+
+  <!-- Nose -->
+  <path d="M198 178 Q194 196 200 200 Q206 196 202 178" fill="none" stroke="#c98f5e" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Mouth -->
+  <path d="M182 214 Q200 224 218 214" fill="none" stroke="#8a5a3c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Jacket lapels detail -->
+  <path d="M160 260 L145 340 L182 300 Z" fill="#22304a"/>
+  <path d="M240 260 L255 340 L218 300 Z" fill="#22304a"/>
+</svg>

@@ -1,7 +1,7 @@
 import React from 'react'
 import salesImg from "../assets/projects/sales.png.png"
 import ecommerceImg from "../assets/projects/ecommerce.png.png"
-import universityImg from "../assets/projects/university.png.png"
+import carRentalImg from "../assets/projects/car-rental.png.png"
 import { FaGithubSquare }from 'react-icons/fa';
 import { PiArrowSquareOutBold } from "react-icons/pi";
 
@@ -18,7 +18,7 @@ const projects = [
   },
 
   {
-    title: "E-Commerce Platform",
+    title: "E-Commerc Platform",
     description:
       "Built a stylish fashion store homepage with a clean layout, highlighting new arrivals and improving user browsing experience.",
     image: ecommerceImg,
@@ -28,13 +28,13 @@ const projects = [
 
   },
   {
-    title: "University Management System",
+    title: "CarRental Platform",
     description:
-      "Created an educational website interface showcasing university information and organized navigation for easy access.",
-    image: universityImg,
-    tags: ["HTML", "CSS"],
-    github: "https://github.com/jayruskirui/University-web",
-    demo: "file:///C:/Users/Hp/OneDrive/Desktop/Projects/university/index.html",
+      "Built a responsive car rental platform that combines a clean user interface with seamless navigation, allowing customers to book vehicles effortlessly while enabling owners to efficiently manage their fleet and bookings.",
+    image: carRentalImg,
+    tags: ["HTML", "Tailwind-css", "Javascript", "React"],
+    github: "https://github.com/jayruskirui/CarRental",
+    demo: "car-rental-seven-green.vercel.app",
 
   },
 ];

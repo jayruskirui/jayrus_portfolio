@@ -8,7 +8,7 @@ import profile from "../assets/profile.png.png";
 const About = () => {
   return (
     <section id="about" className="relative min-h-screen overflow-hidden">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-20 relative z-10">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-10 pt-10 pb-20 relative z-10">
 
     {/* Section heading */}
     <div className="flex flex-col items-center text-gray-300 pt-10 font-medium">
