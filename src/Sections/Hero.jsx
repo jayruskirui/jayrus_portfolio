@@ -96,7 +96,7 @@ const Hero = () => {
       
     <div className='relative animate-fade-in animation-delay-300'>
       {/* profile image */}
-      <div className='relative max-w-md mx-auto'>
+      <div className='relative max-w-md mx-auto max-lg:hidden'>
         <div>
           <img src={profile} alt="Jayrus Kiprotich" className="w-full aspect-[7/8] object-cover rounded-full" />
 
