@@ -4,6 +4,7 @@ import ecommerceImg from "../assets/projects/ecommerce.png.png"
 import carRentalImg from "../assets/projects/car-rental.png.png"
 import { FaGithubSquare }from 'react-icons/fa';
 import { PiArrowSquareOutBold } from "react-icons/pi";
+import Title from '../Components/Title';
 
 
 const projects = [
@@ -49,11 +50,8 @@ const Projects = () => {
       <div className='container mx-auto px-6 relative z-10'>
 
         {/* Section header */}
-        <div className='text-center mx-auto max-w-2xl mb-16'>
-          <span className='text-gray-400 text-sm font-medium tracking-wider uppercase'>
-            Project Universe</span>
-          <h2 className="text-sky-500 text-4xl md:text-5xl font-bold mt-4">Web Developement Projects</h2>
-        </div>
+        
+        <Title subtitle='Project Universe' title='Web Developement Projects' />
 
         {/* project grid */}
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>

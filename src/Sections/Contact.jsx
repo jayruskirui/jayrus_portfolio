@@ -6,6 +6,7 @@ import { FiSend } from "react-icons/fi";
 import emailjs from '@emailjs/browser';
 import { IoAlertCircleOutline } from "react-icons/io5";
 import { GoCheckCircle } from "react-icons/go";
+import Title from '../Components/Title';
 
 
 
@@ -108,12 +109,8 @@ useEffect(() => {
 
     <div className='container mx-auto px-6 relative z-10'>
       {/* Section header */}
-        <div className='text-center mx-auto max-w-2xl mb-16'>
-          <span className="text-gray-400 text-sm font-medium tracking-wider uppercase">
-            GET IN TOUCH</span>
-          <h2 className="text-sky-500 text-4xl md:text-5xl font-bold mt-4">CONTACT</h2>
-        </div>
-
+        
+        <Title subtitle='GET IN TOUCH' title='CONTACT' />
 
        <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
 

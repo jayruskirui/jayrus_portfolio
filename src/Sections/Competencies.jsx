@@ -1,4 +1,5 @@
 import React from 'react'
+import Title from '../Components/Title';
 
 const frontendSkills = [
   { name: "HTML & CSS" },
@@ -78,14 +79,8 @@ const Competencies = () => {
       <div className="container mx-auto px-4 sm:px-8 relative z-10">
 
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="text-gray-400 text-sm font-medium tracking-wider uppercase">
-            My Core Competencies
-          </span>
-          <h2 className="text-sky-500 text-4xl md:text-5xl font-bold mt-4">
-            Web Development
-          </h2>
-        </div>
+        
+        <Title subtitle='My Core Competencies' title='Web Development' />
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

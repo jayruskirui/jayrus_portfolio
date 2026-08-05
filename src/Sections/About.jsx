@@ -4,6 +4,7 @@ import {FcBriefcase} from 'react-icons/fc';
 import { MdReviews} from 'react-icons/md';
 import { Zoom } from 'react-awesome-reveal';
 import profile from "../assets/profile.png.png";
+import Title from '../Components/Title';
 
 const About = () => {
   return (
@@ -11,10 +12,8 @@ const About = () => {
   <div className="container mx-auto px-4 sm:px-6 lg:px-10 pt-10 pb-20 relative z-10">
 
     {/* Section heading */}
-    <div className="flex flex-col items-center text-gray-300 pt-10 font-medium">
-      <h5 className="text-sm text-gray-400">Get To Know</h5>
-      <h2 className="text-2xl text-sky-500 pb-5">About Me</h2>
-    </div>
+    
+    <Title subtitle='Get To Know' title='About' />
 
     
       <div className="grid lg:grid-cols-2 items-center gap-8 mt-4">
