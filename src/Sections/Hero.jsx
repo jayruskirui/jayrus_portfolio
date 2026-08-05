@@ -36,13 +36,13 @@ const skills = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden ">
+    <section className="relative flex items-center overflow-hidden ">
 
      {/* content */}
     <div className='container mx-auto px-6 pt-30 pb-30 relative z-10'>
       <div className='grid lg:grid-cols-2 gap-12 items-center justify-between'>
        {/* Left column */}
-       <div className='space-y-10 sm-space-y-5'>
+       <div className='space-y-10'>
        
         <Greetings/>
          

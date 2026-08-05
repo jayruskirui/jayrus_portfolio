@@ -106,14 +106,14 @@ useEffect(() => {
 
 
   return (
-  <section id="contact" className="py-32 relative overflow-hidden">
+  <section id="contact" className="py-15 relative overflow-hidden">
 
     <div className='container mx-auto px-6 relative z-10'>
       {/* Section header */}
         
         <Title subtitle='GET IN TOUCH' title='CONTACT' />
 
-       <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
+       <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto mt-15'>
 
         {/* Contact Info */}
           <div className="space-y-6">
@@ -143,7 +143,7 @@ useEffect(() => {
             </div>
             
           <div className='bg-slate-800 rounded-3xl p-4 items-center'>
-            <div className="flex items-center gap-2 item-start px-8">
+            <div className="flex items-center gap-4 item-start px-12">
               <div className="relative flex size-3.5 items-center justify-center">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
                 <span className="relative inline-flex size-2.5 rounded-full bg-green-600"></span>

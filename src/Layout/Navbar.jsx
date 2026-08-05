@@ -21,7 +21,7 @@ const Navbar = () => {
       
       {/* LOGO */}
         <a href="#">
-          <span className='font-semibold text-sm flex items-center gap-3 text-blue-400 hover:text-sky-300 transition duration-200'>
+          <span className='font-medium text-sm flex items-center gap-3 text-sky-500 hover:text-sky-300 transition duration-200'>
             <House size={22}/>
             <span className='font-semibold text-xl'>Home</span>
           </span>

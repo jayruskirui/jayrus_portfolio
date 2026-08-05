@@ -21,12 +21,11 @@ const data = [
 
 const Reviews = () => {
   return (
-    <section id="reviews" className="py-16 px-4">
+    <section id="reviews" className="py-15 relative overflow-hidden">
       
       <Title subtitle='Client Reviews' title='Reviews' />
 
-      <Zoom duration={900} delay={100}>
-        <div className="w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 mx-auto pb-7">
+        <div className="w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 mx-auto pb-7 mt-15">
           <Swiper
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             spaceBetween={40}
@@ -48,7 +47,6 @@ const Reviews = () => {
             ))}
           </Swiper>
         </div>
-      </Zoom>
     </section>
   )
 }

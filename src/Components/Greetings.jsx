@@ -18,7 +18,7 @@ function Greeting() {
         I'm  Jayrus Kiprotich
       </h2>
 
-      <span className="inline-flex items-center gap-2 px-4 py-1 rounded-full glass text-2xl text-sky-300 mt-4">
+      <span className="inline-flex items-center gap-2 px-4 py-1 rounded-full glass text-2xl font-medium text-sky-300 mt-4">
         <span className="w-2 h-2 bg-sky-300 rounded-full animate-pulse" />
         <Typewriter
           options={{

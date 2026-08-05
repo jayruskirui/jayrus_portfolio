@@ -9,15 +9,15 @@ import Button from '../Components/Button';
 
 const About = () => {
   return (
-    <section id="about" className="relative min-h-screen overflow-hidden">
+    <section id="about" className="py-10 relative overflow-hidden">
   <div className="container mx-auto px-4 sm:px-6 lg:px-10 pt-10 pb-20 relative z-10">
 
     {/* Section heading */}
     
-    <Title subtitle='Get To Know' title='About' />
+    <Title subtitle='Get To Know' title='About Me' />
 
     
-      <div className="grid lg:grid-cols-2 items-center gap-8 mt-4">
+      <div className="grid lg:grid-cols-2 items-center gap-8 mt-15">
 
         {/* Profile image */}
         <div className="flex justify-center">
@@ -40,14 +40,14 @@ const About = () => {
 
             <a href="#reviews">
               <article className="bg-slate-800 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
-                <MdReviews color="#FF6F00" size={50} className="shrink-0 sm:w-12 sm:h-12" />
+                <MdReviews color="#ff3300" size={50} className="shrink-0 sm:w-12 sm:h-12" />
                 <h3 className="text-xs sm:text-sm leading-snug">Client Reviews<br />12+</h3>
               </article>
             </a>
 
             <a href="#projects">
               <article className="bg-slate-800 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
-                <FcBriefcase size={50} className="shrink-0 sm:w-12 sm:h-12" />
+                <FcBriefcase color="#ff3300" size={50} className="shrink-0 sm:w-12 sm:h-12" />
                 <h3 className="text-xs sm:text-sm leading-snug">Completed<br />Projects<br />10+</h3>
               </article>
             </a>

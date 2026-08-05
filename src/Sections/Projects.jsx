@@ -13,7 +13,7 @@ const projects = [
     description:
       "Crafted a visually refined fashion store homepage that blends elegant typography with a balanced layout, drawing attention to new arrivals while creating a smooth and engaging browsing flow.",
     image: salesImg,
-    tags: ["React", "HTML", "Tailwind CSS", "JavaScript"],
+    tags: ["React", "HTML", "TailwindCSS", "JavaScript"],
     github: "https://github.com/jayruskirui/SALES-APP",
     demo: "https://sales-app-one-theta.vercel.app/",
   },
@@ -23,7 +23,7 @@ const projects = [
     description:
       "Built a stylish fashion store homepage with a clean layout, highlighting new arrivals and improving user browsing experience.",
     image: ecommerceImg,
-    tags: ["React", "HTML/CSS", "JavaScript"],
+    tags: ["React", "HTML/CSS", "JavaScript", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/jayruskirui/e-commerce",
     demo: "https://e-commerce-nine-dusky-5efwmgyyk6.vercel.app/",
 
@@ -33,7 +33,7 @@ const projects = [
     description:
       "Built a responsive car rental platform that combines a clean user interface with seamless navigation, allowing customers to book vehicles effortlessly while enabling owners to efficiently manage their fleet and bookings.",
     image: carRentalImg,
-    tags: ["HTML", "Tailwind-css", "Javascript", "React"],
+    tags: ["React", "HTML", "TailwindCss", "Javascript", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/jayruskirui/CarRental",
     demo: "https://car-rental-seven-green.vercel.app/",
 
@@ -46,7 +46,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className='py-32 relative overflow-hidden'>
+    <section id="projects" className='py-15 relative overflow-hidden'>
       <div className='container mx-auto px-6 relative z-10'>
 
         {/* Section header */}
@@ -54,7 +54,7 @@ const Projects = () => {
         <Title subtitle='Project Universe' title='Web Developement Projects' />
 
         {/* project grid */}
-        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-15'>
           {projects.map((project, index)=>(
             <div
             key={index}
@@ -100,7 +100,7 @@ const Projects = () => {
                   href={project.github}
                   target='_blank'
                   rel="noopener noreferrer"
-                  className='flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-full border border-gray-600 text-gray-300 text-medium font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
+                  className='flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-full border border-gray-600 text-gray-300 text-medium font-medium hover:bg-slate-800 hover:border-gray-400 transition-all duration-300'
                   >
                     <FaGithubSquare className='w-4 h-4'/>
                     Github
@@ -110,7 +110,7 @@ const Projects = () => {
                   href={project.demo}
                   target='_blank'
                   rel="noopener noreferrer"
-                  className='flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-full border border-gray-600 text-gray-300 text-medium font-medium hover:bg-slate-700 hover:border-gray-400 transition-all duration-300'
+                  className='flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-full border border-gray-600 text-gray-300 text-medium font-medium hover:bg-slate-800 hover:border-gray-400 transition-all duration-300'
                   >
                     <PiArrowSquareOutBold  className='w-4 h-4'/>
                     Live Demo

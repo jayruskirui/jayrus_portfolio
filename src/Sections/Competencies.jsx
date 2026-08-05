@@ -13,10 +13,10 @@ const frontendSkills = [
 const backendSkills = [
   { name: "Node.js" },
   { name: "REST API Design" },
-  { name: "Database Design" },
+  { name: "Java" },
   { name: "Authentication & Security" },
   { name: "Express.js" },
-  { name: "Next.js" },
+  { name: "SpringBoot" },
 ];
 
 const databaseSkills = [
@@ -63,9 +63,9 @@ const SkillItem = ({ name }) => (
 );
 
 const SkillCard = ({ title, skills }) => (
-  <div className="border border-transparent rounded-3xl bg-slate-800 p-6">
-    <h3 className="text-sky-300 text-xl font-bold text-center mb-6">{title}</h3>
-    <div className="grid grid-cols-2 gap-x-4 gap-y-4">
+  <div className="border border-transparent rounded-3xl bg-slate-800 hover:bg-slate-900 hover:border-sky-900 duration-700 transition-all p-6">
+    <h3 className="text-sky-400 text-2xl font-semibold text-center mb-6">{title}</h3>
+    <div className="grid grid-cols-2 gap-x-7 gap-y-10 font-medium">
       {skills.map((item, i) => (
         <SkillItem key={i} name={item.name} />
       ))}
@@ -75,7 +75,7 @@ const SkillCard = ({ title, skills }) => (
 
 const Competencies = () => {
   return (
-    <section id="competencies" className="py-10 relative overflow-hidden">
+    <section id="competencies" className="py-15 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-8 relative z-10">
 
         {/* Section Header */}
@@ -83,7 +83,7 @@ const Competencies = () => {
         <Title subtitle='My Core Competencies' title='Web Development' />
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-15">
           <SkillCard title="Frontend" skills={frontendSkills} />
           <SkillCard title="Backend" skills={backendSkills} />
           <SkillCard title="Database" skills={databaseSkills} />
