@@ -16,7 +16,7 @@ const About = () => {
       <h2 className="text-2xl text-sky-500 pb-5">About Me</h2>
     </div>
 
-    <Zoom duration={500} delay={20}>
+    
       <div className="grid lg:grid-cols-2 items-center gap-8 mt-4">
 
         {/* Profile image */}
@@ -70,7 +70,6 @@ const About = () => {
         </div>
 
       </div>
-    </Zoom>
   </div>
 </section>
   )

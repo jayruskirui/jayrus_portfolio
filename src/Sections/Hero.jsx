@@ -44,7 +44,7 @@ const Hero = () => {
     <div className='container mx-auto px-6 pt-30 pb-30 relative z-10'>
       <div className='grid lg:grid-cols-2 gap-12 items-center justify-between'>
        {/* Left column */}
-       <div className='space-y-10'>
+       <div className='space-y-10 sm-space-y-5'>
        
         <Greetings/>
          
