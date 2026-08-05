@@ -64,7 +64,7 @@ const SkillItem = ({ name }) => (
 
 const SkillCard = ({ title, skills }) => (
   <div className="border border-transparent rounded-3xl bg-slate-800 hover:bg-slate-900 hover:border-sky-900 duration-700 transition-all p-6">
-    <h3 className="text-sky-400 text-2xl font-semibold text-center mb-6">{title}</h3>
+    <h3 className="text-sky-300 text-2xl font-semibold text-center mb-6">{title}</h3>
     <div className="grid grid-cols-2 gap-x-7 gap-y-10 font-medium">
       {skills.map((item, i) => (
         <SkillItem key={i} name={item.name} />
