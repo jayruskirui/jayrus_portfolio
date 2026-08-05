@@ -1,24 +1,7 @@
-
-const Button = ({
-  className = "",
-  size = "default",
-  children,
-  ...props
-}) => {
-  const baseClasses =
-    "relative overflow-hidden border border-gray-600 hover:border-gray-300 rounded font-medium bg-slate-800 text-gray-300 hover:bg-slate-700 transition duration-200 inline-flex items-center justify-center gap-2";
-
-  const sizeClasses = {
-    sm: "px-4 py-2 text-sm",
-    default: "px-6 py-3 text-base",
-    lg: "px-5 py-2 text-lg",
-  };
-  const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
+const Button = ({ children }) => {
   return (
-    <button className={classes} {...props}>
-      <span className="relative flex items-center justify-center gap-2">
-        {children}
-      </span>
+    <button className="rounded-md bg-[#1b2438] px-5 py-2 text-white transition-all duration-300 inline-flex items-center gap-2 bg-sky-600 font-medium hover:scale-105">
+      {children}
     </button>
   );
 };

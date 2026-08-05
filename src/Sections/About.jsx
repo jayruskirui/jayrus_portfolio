@@ -5,6 +5,7 @@ import { MdReviews} from 'react-icons/md';
 import { Zoom } from 'react-awesome-reveal';
 import profile from "../assets/profile.png.png";
 import Title from '../Components/Title';
+import Button from '../Components/Button';
 
 const About = () => {
   return (
@@ -62,9 +63,7 @@ const About = () => {
 
           {/* CTA */}
           <a href="#contact">
-            <button className="group flex items-center gap-2 rounded-lg px-5 py-2.5 font-medium bg-gradient-to-r from-sky-600 to-indigo-500 hover:from-sky-500 hover:to-indigo-400 transition-all duration-300">
-              Let's Talk
-            </button>
+            <Button> Let's Talk </Button>
           </a>
         </div>
 

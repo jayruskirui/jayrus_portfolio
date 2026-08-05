@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 import { IoAlertCircleOutline } from "react-icons/io5";
 import { GoCheckCircle } from "react-icons/go";
 import Title from '../Components/Title';
+import Button from '../Components/Button';
 
 
 
@@ -140,7 +141,18 @@ useEffect(() => {
                 ))}
               </div>
             </div>
-          </div>
+            
+          <div className='bg-slate-800 rounded-3xl p-4 items-center'>
+            <div className="flex items-center gap-2 item-start px-8">
+              <div className="relative flex size-3.5 items-center justify-center">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
+                <span className="relative inline-flex size-2.5 rounded-full bg-green-600"></span>
+              </div>
+                <p className="text-md text-gray-400 font-semibold">Available for work</p>
+            </div>
+          </div> 
+
+        </div>
 
         {/* Form Info */}
         <div className='bg-slate-800 p-8 rounded-3xl text-gray-300'>
@@ -203,9 +215,7 @@ useEffect(() => {
               className='w-full px-4 py-3 bg-slate-700 rounded-xl border border-transparent focus:border-slate-500 focus:ring-1 focus:border-slate-500 outline-none transition-all resize-none'/>
             </div>
 
-            <button 
-            className="group flex items-center gap-2 rounded-lg px-4 py-2 font-medium ... bg-gradient-to-r from-sky-600 to-indigo-500 hover:from-sky-500 hover:to-indigo-400"
-            type='submit'
+            <Button 
             disabled={isLoading}>
               {isLoading ? (
                 <>Sending...</>
@@ -216,7 +226,7 @@ useEffect(() => {
                 </>
               )
               }
-            </button>
+            </Button>
 
             {submitStatus.type && (
                 <div
