@@ -66,7 +66,7 @@ const Hero = () => {
           </Button>
         </a>
 
-        <a href='https://drive.google.com/file/d/1G7SrteNyQ78RT5RvlgQ5RVhtZ4qmsmSd/view?usp=drive_link'>
+        <a href='https://drive.google.com/file/d/16hWOAtmVKABC9QGjmkZOCpweKJcv0VJ9/view?usp=sharing'>
         <button className="group flex items-center gap-2 px-5 py-2 text-gray-400 hover:text-gray-200 
         border border-gray-400 hover:border-gray-600 rounded-md font-medium 
          transition-opacity hover:opacity-85 hover:scale-101">

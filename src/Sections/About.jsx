@@ -30,7 +30,7 @@ const About = () => {
         <div className="text-gray-300 space-y-8">
 
           {/* Stat cards */}
-          <div className="grid grid-cols-3 gap-3 sm:gap-4">
+          <div className="grid grid-cols-3 gap-3 sm:gap-4 ">
             <a href="#projects">
               <article className="bg-slate-800 hover:bg-slate-900 border border-transparent hover:border-sky-900 duration-700 rounded-2xl p-4 sm:p-6 text-center flex flex-col items-center justify-center gap-3 sm:gap-5 h-40 sm:h-52">
                 <GiAchievement color="#ff3300" size={50} className="shrink-0 sm:w-12 sm:h-12" />
