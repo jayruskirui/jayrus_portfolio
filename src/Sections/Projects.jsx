@@ -35,7 +35,7 @@ const projects = [
     image: carRentalImg,
     tags: ["React", "HTML", "TailwindCss", "Javascript", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/jayruskirui/CarRental",
-    demo: "https://car-rental-seven-green.vercel.app/",
+    demo: "https://car-rental-seven-kohl.vercel.app/",
 
   },
 ];
