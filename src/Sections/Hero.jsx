@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArrowDown, Download } from 'lucide-react'
-import profile from '../assets/profile.png.png'
+import profile from '../assets/profile.png (2).png'
 import Greetings from '../Components/Greetings'
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiGraphql, SiPostgresql, SiMongodb, SiRedis, SiDocker,SiVercel, SiTailwindcss, SiPrisma, SiJest, SiCypress, SiFigma, SiGit, SiGithubactions } from "react-icons/si";
